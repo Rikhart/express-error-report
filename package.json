@@ -1,12 +1,12 @@
 {
   "name": "express-error-report",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "error reporting through mail",
   "homepage": "",
   "author": {
     "name": "rikhart",
     "email": "jholarck@gmail.com",
-    "url": ""
+    "url": "https://github.com/Rikhart/express-error-report"
   },
   "files": [
     "lib"
