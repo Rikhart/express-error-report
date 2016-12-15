@@ -1,6 +1,6 @@
 {
   "name": "express-error-report",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "error reporting through mail",
   "homepage": "",
   "author": {
@@ -40,7 +40,7 @@
       "mocha": true
     }
   },
-  "repository": "git@github.com:Rikhart/error-reporting.git",
+  "repository": "git@github.com:Rikhart/express-error-report.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
