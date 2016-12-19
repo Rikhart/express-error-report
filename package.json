@@ -1,6 +1,6 @@
 {
   "name": "express-error-report",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "error reporting through mail",
   "homepage": "",
   "author": {
