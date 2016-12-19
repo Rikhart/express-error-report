@@ -47,8 +47,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "emailjs": "^1.0.8",
     "fs-extra": "^1.0.0",
+    "handlebars": "^4.0.6",
     "nodemailer": "^2.7.0",
     "nodemailer-mailgun-transport": "^1.2.2"
   }
