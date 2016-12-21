@@ -7,7 +7,9 @@ var express = require('express')
 var app = express();
   // respond with "hello world" when a GET request is made to the homepage
 app.get('/user', function(req, res, next) {
-  console.log(c);
+  var error=new Error()
+  error.code=401;
+  throw error;
 });
 
 describe('express-error-report', function() {
