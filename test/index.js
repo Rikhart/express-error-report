@@ -5,10 +5,10 @@ var expressErrorReport = require('../lib');
 var request = require('supertest');
 var express = require('express')
 var app = express();
-  // respond with "hello world" when a GET request is made to the homepage
+// respond with "hello world" when a GET request is made to the homepage
 app.get('/user', function(req, res, next) {
-  var error=new Error()
-  error.code=401;
+  var error = new Error()
+  error.code = 401;
   throw error;
 });
 
@@ -25,6 +25,13 @@ describe('express-error-report', function() {
       to: 'jholarck@gmail.com',
       subject: 'Error Report',
       'h:Reply-To': 'hello@kodevian.com',
+    }, {
+      watcherrCodes: ["401", "500"],
+      remotingContext: {
+        originalUrl: true,
+        args: true,
+        methodString: true
+      }
     });
     assert(true, 'Configuras el modulo');
     done();
@@ -40,6 +47,8 @@ describe('express-error-report', function() {
       .end(function(err, res) {
         if (!err) {
           done();
+        } else {
+          // done()
         }
       });
   });
